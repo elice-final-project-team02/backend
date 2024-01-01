@@ -4,11 +4,10 @@
   "description": "elice final project (BE)",
   "main": "./dist/app.js",
   "scripts": {
-    "start": "pm2 start ecosystem.config.js --only production --env production",
-    "del": "pm2 del all",
+    "start": "node dist/app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "dev": "cross-env NODE_ENV=developmant nodemon --watch \"src/**/*.ts\" --exec \"ts-node\" src/app.ts",
+    "dev": "cross-env NODE_ENV=development nodemon --watch \"src/**/*.ts\" --exec \"ts-node\" src/app.ts",
     "lint": "eslint 'src/**/*.ts'"
   },
   "keywords": [],
